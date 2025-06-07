@@ -1,6 +1,45 @@
 
 ---
 
+## Workflow
+
+```text
+[Register Page] --> [createUserWithEmailAndPassword()]
+                          ↓
+                    Firebase create new user
+                          ↓
+                Login successful → Jump to Dashboard
+```
+
+```text
+[Login Page] --> [signInWithEmailAndPassword()]
+                       ↓
+                 Firebase Verification Account
+                       ↓
+           If successful: Jump to Dashboard
+           If failed: an error message will pop up
+```
+
+---
+
+##  Login protection mechanism
+
+* All protected pages (here `/dashboard` is used) are wrapped by `<ProtectedRoute>`.
+* `ProtectedRoute` will use `useAuthState(auth)` provided by Firebase to determine whether the user is logged in:
+
+  * ✅ Logged in: Allow access and rendering of content
+  * ❌ Not logged in: automatically jump to `/login`
+
+---
+
+##  Logout process
+
+1. The user clicks the `Logout` button on the Dashboard page
+2. Call the `signOut(auth)` method provided by Firebase
+3. Automatically jump back to `/login` after logging out
+---
+
+
 ##  Features
 
 - ✅ Firebase Email/Password Authentication
@@ -21,20 +60,20 @@
 
 ##  Getting Started
 
-### ✅ 1. Clone the Repo
+###  1. Clone the Repo
 
 ```bash
 git clone https://github.com/Shirahagi/login.git
 cd login
 ````
 
-### ✅ 2. Install Dependencies
+###  2. Install Dependencies
 
 ```bash
 npm install
 ```
 
-### ✅ 3. Add Firebase Config
+###  3. Add Firebase Config
 
 Create a file: `src/firebase.js` with the following structure:
 （There is already a firebase.js file in the file, which uses my account. I don't know if this can be run on other computers）
@@ -60,7 +99,7 @@ export const auth = getAuth(app);
 
 ---
 
-## ▶️ 4. Run the App
+## ▶ 4. Run the App
 
 ```bash
 npm start
@@ -70,7 +109,7 @@ Visit: [http://localhost:3000/register](http://localhost:3000/register) or `/log
 
 ---
 
-## ✅ Available Routes
+##  Available Routes
 
 | Path         | Description                     |
 | ------------ | ------------------------------- |
