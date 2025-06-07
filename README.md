@@ -60,7 +60,7 @@
 
 ##  Getting Started
 
-###  1. Clone the Repo
+###  1. Clone the Repo(release is only for backup)
 
 ```bash
 git clone https://github.com/Shirahagi/login.git
