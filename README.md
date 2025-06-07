@@ -1,12 +1,4 @@
 
-
-````markdown
-# Firebase Auth Login System (React)
-
-A simple Firebase + React authentication system with email/password login & registration, protected dashboard routing, and logout support.
-
-![Preview](https://user-images.githubusercontent.com/your/optional/screenshot.png)
-
 ---
 
 ## 🚀 Features
