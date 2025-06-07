@@ -24,8 +24,8 @@
 ### ✅ 1. Clone the Repo
 
 ```bash
-git clone https://github.com/yourusername/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/Shirahagi/login.git
+cd login
 ````
 
 ### ✅ 2. Install Dependencies
@@ -37,6 +37,7 @@ npm install
 ### ✅ 3. Add Firebase Config
 
 Create a file: `src/firebase.js` with the following structure:
+（There is already a firebase.js file in the file, which uses my account. I don't know if this can be run on other computers）
 
 ```js
 import { initializeApp } from "firebase/app";
