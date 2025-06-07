@@ -1,7 +1,7 @@
 
 ---
 
-## 🚀 Features
+##  Features
 
 - ✅ Firebase Email/Password Authentication
 - 🔐 Protected Routes via `react-router-dom`
@@ -10,7 +10,7 @@
 
 ---
 
-## 📦 Technologies
+##  Technologies
 
 - React 18+
 - Firebase Auth (modular SDK v9)
@@ -19,7 +19,7 @@
 
 ---
 
-## 🔧 Getting Started (One Command Setup)
+##  Getting Started
 
 ### ✅ 1. Clone the Repo
 
